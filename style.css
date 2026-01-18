@@ -26,20 +26,24 @@
     color: #FFFFFF;
     border-radius: 10000px;
 }
-
+.btn1{
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    background: none;
+}
 
 
 
 
 /* main-style */
 .navbar{
-    width: 75%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 200px;
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    padding: 24px 0;
     background-color: #1A0B2E;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .navbar h2{
@@ -62,6 +66,8 @@
 
 }
 .banner-section{
+    /* max-width: 100%;
+    margin: 0 auto; */
     text-align: center;
     padding: 101px 0;
     background: url(./assets/hero-bg.png);
@@ -90,8 +96,9 @@
     
 
 }
+
 hr{
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     border: 1px solid #412567;
     
@@ -103,4 +110,66 @@ hr{
     position: absolute;
     border-radius: 1000px;
     transform: translateX(75px) translateY(13px);
+}
+.about{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+    padding-top: 50px;
+
+  
+}
+.about-container{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center
+
+}
+.about-container h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+
+}
+.about-container p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 24px;
+
+}
+.hr2{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /* border: 1px solid #412567 ; */
+}
+.activity{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-bottom: 120px;
+    
+}
+.activity-card{
+    max-width: 240px;
+    text-align: center;
+}
+.activity-card h4{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+.activity-card p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 16px;
+
 }
