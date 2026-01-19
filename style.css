@@ -181,6 +181,7 @@ hr{
     margin: 0 auto;
     background-color: #230E3D;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 #why-choose h2{
     font-size: 3rem;
@@ -240,6 +241,16 @@ hr{
 .audio{
     width: 350px;
     padding-top: 107px;
+}
+.episode h2{
+    text-align: center;
+}
+.episode-container{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
 }
 
 
