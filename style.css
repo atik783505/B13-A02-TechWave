@@ -65,6 +65,9 @@
     color: #FFFFFF;
 
 }
+.hamburger{
+    display: none;
+}
 .banner-section{
     /* max-width: 100%;
     margin: 0 auto; */
@@ -237,4 +240,46 @@ hr{
 .audio{
     width: 350px;
     padding-top: 107px;
+}
+
+
+
+/* responsive mobile device */
+@media screen and (max-width:576px) {
+    .display-none a{
+        display: none;
+    }
+
+    .btn2{
+        visibility: hidden;
+    }
+    .hamburger{
+        display: block;
+    }
+    .activity{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .choose-container{
+        grid-template-areas: 
+        "audio"
+        "mobile"
+        "global"
+        "interview"
+        "resource"
+    }
+    .choose-container>* {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .banner-icon img{
+        max-width: 80px;
+    }
+    .banner-section{
+        background-size: 100%;
+        background-position: 0px 130px;
+        background-color: #1A0B2E;
+        
+    }
+
+    
 }
