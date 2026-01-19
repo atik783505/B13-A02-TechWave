@@ -113,6 +113,7 @@ hr{
     position: absolute;
     border-radius: 1000px;
     transform: translateX(75px) translateY(13px);
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
 }
 .about{
     max-width: 1600px;
@@ -308,6 +309,8 @@ hr{
     padding: 24px;
 }
 .challenge{
+    max-width: 1600px;
+    margin: 0 auto;
     background-color: #1A0B2E;
     padding-bottom: 120px;
 }
@@ -357,33 +360,90 @@ hr{
     border-radius:100%;
     padding: 10px;
     display: flex;
+}
+footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    background: url(./assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
+}
+.footer-container{
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
 
+.footer-container h2{
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-weight: 400;
+}
+.footer-container li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.footer-container p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #FAFAFA;
+    opacity: 80%;
 }
 
 /* responsive mobile device */
 @media screen and (max-width:576px) {
-    *{
-        /* box-sizing: border-box; */
-        padding: 0;
-        margin: 0;
-    }
-    body{
-        width: 100%;
-    }
+
     .display-none a{
         display: none;
     }
 
+
     .btn2{
-        visibility: hidden;
+        display: none;
     }
     .hamburger{
-        display: block;
+        display: contents;
     }
+
+    .banner-icon img{
+        max-width: 80px;
+    }
+    .banner-section{
+        background-size: 100%;
+        background-position: 0px 160px;
+        background-color: #1A0B2E;
+        
+    }
+    .banner-icon img{
+        padding: 60px 75px;
+        background: url(./assets/hero-circle.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .new{
+        transform: translateX(75px) translateY(40px);
+    }
+    
     .activity{
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+        justify-content: center;
     }
     .choose-container{
         grid-template-areas: 
@@ -397,15 +457,7 @@ hr{
         width: 75%;
         margin: 0 auto;
     }
-    .banner-icon img{
-        max-width: 80px;
-    }
-    .banner-section{
-        background-size: 100%;
-        background-position: 0px 130px;
-        background-color: #1A0B2E;
-        
-    }
+
     .episode-container{
         flex-direction: column;
         
@@ -418,6 +470,20 @@ hr{
     }
     .host{
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .icon{
+        justify-content: center;
+    }
+    .footer-container .link{
+        width: 50%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
     }
 
     
