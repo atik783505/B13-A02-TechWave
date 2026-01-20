@@ -300,6 +300,7 @@ hr{
     margin-bottom: 30px;
 }
 .episode-card{
+    width: 90%;
     max-width: 380px;
     background-color: #250D44;
     border-radius: 20px;
@@ -563,8 +564,6 @@ footer{
         
     }
     .episode-card{
-        max-width: 80%;
-        max-width: 380px;
         margin: 0 auto;
     }
     
