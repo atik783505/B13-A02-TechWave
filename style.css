@@ -96,10 +96,10 @@
     font-size: 1rem;
     color: #FFFFFF;
     margin-bottom: 24px;
+    opacity: 80%;
     
 
 }
-
 hr{
     max-width: 1600px;
     margin: 0 auto;
@@ -141,6 +141,7 @@ hr{
     font-size: 1rem;
     color: #FFFFFF;
     line-height: 24px;
+    opacity: 80%;
 
 }
 .hr2{
@@ -175,6 +176,7 @@ hr{
     font-size: 1rem;
     font-weight: 400;
     margin-top: 16px;
+    opacity: 80%;
 
 }
 #why-choose{
@@ -237,6 +239,7 @@ hr{
     font-size: 1rem;
     color: #FFFFFF;
     line-height: 24px;
+    opacity: 80%;
 }
 
 .audio{
@@ -299,6 +302,7 @@ hr{
     line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 12px;
+    opacity: 80%;
 
 
 }
@@ -345,6 +349,7 @@ hr{
     color: #FFFFFF;
     line-height: 24px;
     margin-bottom: 16px;
+    opacity: 80%;
 
 }
 
@@ -377,15 +382,16 @@ footer{
 }
 
 .footer-container h2{
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #FFFFFF;
     margin-bottom: 16px;
 }
 .footer-container ul{
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 40px;
     font-weight: 400;
 }
@@ -403,6 +409,10 @@ footer{
     line-height: 24px;
     color: #FAFAFA;
     opacity: 80%;
+}
+.link span{
+    opacity: 60%;
+    white-space: nowrap;
 }
 
 /* responsive mobile device */
@@ -424,27 +434,56 @@ footer{
         max-width: 80px;
     }
     .banner-section{
-        background-size: 100%;
-        background-position: 0px 160px;
-        background-color: #1A0B2E;
-        
+        background: url(./assets/banner-res.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        padding: 60px;
+    
     }
+     .banner-content h2{
+        font-size: 2.85rem;
+     } 
     .banner-icon img{
         padding: 60px 75px;
-        background: url(./assets/hero-circle.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .new{
         transform: translateX(75px) translateY(40px);
     }
-    
+    .btns{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .about-container{
+        width: 95%;
+    }
+    .about-container h2{
+        font-size: 2.2rem;
+    }
+    .hr2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
     .activity{
+        width: 95%;
+        padding-bottom: 40px;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         justify-content: center;
     }
+    #why-choose{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+     #why-choose h2{
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+     }
+     .audio{
+        padding-top: 40px;
+     }
     .choose-container{
         grid-template-areas: 
         "audio"
@@ -456,6 +495,30 @@ footer{
     .choose-container>* {
         width: 75%;
         margin: 0 auto;
+    }
+    .choose-container>*> h4{
+        font-size: 1.37rem;
+    }
+    .episode {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .episode h2{
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+    }
+    .episode-card h4{
+        font-size: 1.25rem;
+    }
+    .challenge{
+        padding-bottom: 40px;
+    }
+    .challenge h2{
+        font-size: 2.2rem;
+
+    }
+    .host-container h3{
+        font-size: 1.5rem;
     }
 
     .episode-container{
@@ -477,13 +540,23 @@ footer{
         justify-content: center;
     }
     .footer-container .link{
-        width: 50%;
+        width: 280px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         text-align: center;
         gap: 8px;
+    }
+    .footer-container h2{
+        font-size: 3rem;
+    }
+
+    footer{
+        background: url(./assets/Image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
     }
 
     
