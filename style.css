@@ -38,8 +38,6 @@
 
 /* main-style */
 .navbar{
-    /* max-width: 1600px;
-    margin: 0 auto; */
     padding: 24px 0;
     background-color: #1A0B2E;
     text-align: center;
@@ -69,9 +67,10 @@
 .hamburger{
     display: none;
 }
+
+/* .banner-section */
+
 .banner-section{
-    /* max-width: 100%;
-    margin: 0 auto; */
     text-align: center;
     padding: 101px 0;
     background: url(./assets/hero-bg.png);
@@ -84,12 +83,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    animation: zoom 1.5s ease-out forwards;
 }
-@keyframes zoom {
-    0% {transform: scale(0);opacity: 0;;}
-    100% {transform: scale(1); opacity: 1;}
-}
+
 .banner-content h2{
     font-size: 3.75rem;
     font-weight: 800;
@@ -135,7 +130,17 @@ hr{
     border-radius: 1000px;
     transform: translateX(75px) translateY(13px);
     box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+    animation: zoom 1.5s ease-out infinite;
 }
+@keyframes zoom {
+    0%{transform: translateX(75px) translateY(13px);}
+    50%{transform: translateX(75px) translateY(33px);}
+    100%{transform: translateX(75px) translateY(13px);}
+    
+}
+
+/* .about-section */
+
 .about{
     max-width: 1600px;
     margin: 0 auto;
@@ -170,7 +175,6 @@ hr{
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    /* border: 1px solid #412567 ; */
 }
 .activity{
     width: 75%;
@@ -200,6 +204,9 @@ hr{
     opacity: 80%;
 
 }
+
+/* why-choose-section */
+
 #why-choose{
     max-width: 1600px;
     margin: 0 auto;
@@ -267,7 +274,7 @@ hr{
     width: 350px;
     padding-top: 107px;
 }
-
+/* podcast-section */
 .episode{
     max-width: 1600px;
     margin: 0 auto;
@@ -314,6 +321,7 @@ hr{
 .episode-card h4{
     padding-left: 24px;
     padding-top: 24px;
+    padding-right: 24px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #FFFFFF;
@@ -323,6 +331,7 @@ hr{
 }
 .episode-card p{
     padding-left: 24px;
+    padding-right: 24px;
     font-size: 1rem;
     line-height: 24px;
     color: #FFFFFF;
@@ -338,6 +347,7 @@ hr{
     font-weight: 600;
     padding: 24px;
 }
+/* .challenge-part */
 .challenge{
     max-width: 1600px;
     margin: 0 auto;
@@ -392,6 +402,7 @@ hr{
     padding: 10px;
     display: flex;
 }
+/* footer-section */
 footer{
     max-width: 1600px;
     margin: 0 auto;
@@ -417,7 +428,6 @@ footer{
     list-style: none;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     gap: 40px;
     font-weight: 400;
 }
@@ -549,7 +559,13 @@ footer{
 
     .episode-container{
         flex-direction: column;
+        width: 100%;
         
+    }
+    .episode-card{
+        max-width: 80%;
+        max-width: 380px;
+        margin: 0 auto;
     }
     
     .episode-card iframe{
