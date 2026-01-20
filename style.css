@@ -25,11 +25,12 @@
     border: none;
     color: #FFFFFF;
     border-radius: 10000px;
+    transition: all 0.3s ease;
 }
-.btn1{
-    color: #00FF88;
-    border: 1px solid #00FF88;
-    background: none;
+.btn:hover{
+    transform: translateY(-5px) scale(0.95);
+    box-shadow: 0 5px 10px 0 #FB09B4;
+    cursor: pointer;
 }
 
 
@@ -83,6 +84,11 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    animation: zoom 1.5s ease-out forwards;
+}
+@keyframes zoom {
+    0% {transform: scale(0);opacity: 0;;}
+    100% {transform: scale(1); opacity: 1;}
 }
 .banner-content h2{
     font-size: 3.75rem;
@@ -97,8 +103,22 @@
     color: #FFFFFF;
     margin-bottom: 24px;
     opacity: 80%;
-    
+}
+.btn1{
+    padding: 12.5px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10000px;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    background: none;
+    transition: all 0.3s ease;
+}
 
+.btn1:hover{
+    transform: translateY(-5px) scale(0.95);
+    box-shadow: 0 5px 10px 0 #00FF88;
+    cursor: pointer;
 }
 hr{
     max-width: 1600px;
@@ -111,6 +131,7 @@ hr{
     background-color: #00FF88;
     padding: 8px 16px;
     position: absolute;
+    z-index: 999;
     border-radius: 1000px;
     transform: translateX(75px) translateY(13px);
     box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
@@ -276,7 +297,11 @@ hr{
     background-color: #250D44;
     border-radius: 20px;
     padding-bottom: 24px;
+    transition:0.3s ease-out;
   
+}
+.episode-card:hover{
+    transform: translateY(10px);
 }
 
 .episode-card iframe{
@@ -306,6 +331,7 @@ hr{
 
 
 }
+
 .time{
     color: #00FF88;
     font-size: 1rem;
@@ -550,6 +576,10 @@ footer{
     }
     .footer-container h2{
         font-size: 3rem;
+    }
+    .footer-container{
+        padding: 40px;
+        padding: 40px;
     }
 
     footer{
